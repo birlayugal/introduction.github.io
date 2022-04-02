@@ -1,0 +1,362 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+
+		.fa-free-code-camp:before{
+			content: "\f2c5";
+		}
+
+
+		.container{
+			padding: 15px;
+			display:grid ;
+			max-height: 800px;
+			width: 100%	;
+			grid-template-columns: auto auto auto;
+			justify-content: center;
+			text-align:center;
+			grid-row-gap: 40px;
+			grid-column-gap: 40px;
+		}
+	
+		@media only screen and (max-width: 600px) {
+			body{
+				background-color: lightcyan;	
+			}
+			}
+		
+
+		.btn-show-all{
+			margin-top: 25px;
+			background-color: #000;
+			display: inline-block;
+			width: 120px;
+			height: auto;
+		}
+
+		body{
+			color: white;
+			font-family: sans-serif;
+			background-color: #000;
+		}
+
+
+		.btn{
+			padding: 15px;
+		
+			border: 1px solid pink ;
+			
+			
+			font-size: 1.3em;
+
+		}
+
+
+		footer{
+			width: 100%;
+			display: flex;
+			border-top: 2px solid red;
+		}
+
+		footer p{
+			padding: 20px;
+
+		}
+
+		a{
+		text-decoration: none;
+		color: white;
+		font-size: 1em;
+
+		}
+
+		.contact-details{
+			font-size: 1.5em;
+			transition: transform 0.3s east-out;
+			text-shadow: 2px 2px 1px #1f1f1f;
+		}
+
+		#project{
+			background:#45567d;
+			padding: 10px;
+			padding-top: 40px;
+			padding-bottom: 100px;
+			border: 1px solid green ;
+		}
+
+		#navbar{
+			height: 50px;
+			width: 100%;
+			background-color: red;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		ul{
+			/*display: block;*/
+			float: right;
+		}
+
+		li{
+			list-style: none;
+			float: left;
+			
+		}
+
+		h2{
+			padding: 10px;
+			font-size: 2.5em;
+		}
+
+		h1{
+			padding-top: 200px;
+			font-size: 3.5em;
+			
+		}
+
+		.contact-section-header{
+			padding-top: 225px;
+		}
+
+		p{
+			display: block;
+			font-size: 1.5em;
+		}
+
+		section{
+			width: 100%;
+			min-height: 650px;
+			text-align: center;
+		}
+
+		#navbar a:hover{
+			background-color: grey;
+			cursor: pointer;
+
+		}
+
+		#navbar a{
+			text-decoration: none;
+			margin: 10px;
+			padding: 10px;
+			
+			font-size: 1.4em;
+			font-weight: bold;
+			color: white;
+					}
+
+			.container a{
+				width: 280px;
+				height: 340px;
+				text-decoration: none;
+				color: white;
+				background-color: #000;
+				
+			}
+
+
+
+			img{
+
+				width: 100%;
+				height: 250px;
+			}
+
+		#welcome-section{
+			margin-top: 50px;
+		}
+
+		.fa-chevron-right:before{
+			content: "\f054";
+		}
+
+		.fa-facebook-square:before{
+			content: "\f082";
+		}	
+
+		.fa-github:before{
+			content: "\f09b";
+		}
+
+		.fa-twitter:before{
+			content: "\f099";
+		}
+
+		.fa-at:before{
+			content: "\f1fa";
+		}
+
+		.fa-mobile-alt:before{
+			content: "\f3cd";
+		}
+
+	</style>
+</head>
+<body>
+		<nav id="navbar">
+			<ul>
+				<li>
+					<a href="#welcome-section">About</a>
+				</li>
+				<li>
+					<a href="#project">Work</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section id="welcome-section" class="welcome-section">
+			<h1>
+				Hey I am Mimic
+			</h1>
+			<p>
+					a web developer
+			</p>
+		</section>
+
+		<section id="project" class="project-section">
+			<h2>
+				These are some of my projects
+			</h2>
+			<div class="container">
+				<a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
+			      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+			      <p class="project-title">
+			        <span class="code">
+				        &lt;
+				    </span>
+			        Tribute Page
+			        <span class="code">
+			        	&gt;
+			        </span>
+			      </p>
+			    </a>	
+			    <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+			      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project">
+			      <p class="project-title">
+			        <span class="code">
+			        	&lt;
+			        </span>
+			        Random Quote Machine
+			        <span class="code">
+			        	/&gt;
+			        </span>
+			      </p>
+			    </a>
+			    <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+			      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project">
+			      <p class="project-title">
+			        <span class="code">
+			        	&lt;
+			        </span>
+			        JavaScript Calculator
+			        <span class="code">
+			        	/&gt;
+			        </span>
+			      </p>
+			    </a>
+
+			    <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
+			      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project">
+			      <p class="project-title">
+			        <span class="code">
+			        	&lt;
+			        </span>
+			        Map Data Across the Globe
+			        <span class="code">
+			        	/&gt;
+			        </span>
+			      </p>
+			    </a>
+			  	<a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
+			      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project">
+			      <p class="project-title">
+			        <span class="code">
+			        	&lt;
+			        </span>
+			        Wikipedia Viewer
+			        <span class="code">
+			        	/&gt;
+			        </span>
+			      </p>
+			    </a>
+			    <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
+			      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project">
+			      <p class="project-title">
+			        <span class="code">
+			        	&lt;
+			        </span>
+			        Tic Tac Toe Game
+			        <span class="code">
+			        	/&gt;
+			        </span>
+			      </p>
+			    </a>
+			</div>
+			<a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">
+				Show all
+				<i class="fas fa-chevron-right">
+				</i>
+			</a>
+		</section>
+		<section id="contact" class="contact-section">
+			<div class="contact-section-header">
+			    <h2>
+			    	Let's work together...
+			    </h2>
+			    <p>
+			    	How do you take your coffee?
+			    </p>
+			  </div>
+			  <div class="contact-links">
+			    <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details">
+			    	<i class="fab fa-facebook-square">
+			    	</i>
+			    	 Facebook
+			    </a>
+			    <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details">
+			    	<i class="fab fa-github">
+			       	</i>
+			       	 GitHub
+			       	</a>
+			    <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details">
+			    	<i class="fab fa-twitter">
+			    	</i>
+			    	Twitter
+			    </a>
+			    <a href="mailto:example@example.com" class="btn contact-details">
+			    	<i class="fas fa-at">
+			    	</i>
+			    	Send a mail
+			    </a>
+			    <a href="tel:555-555-5555" class="btn contact-details">
+			    	<i class="fas fa-mobile-alt">
+			    	</i>
+			    	 Call me
+			    </a>
+			 </div>
+		</section>
+		<footer>
+			<p>
+			   **This is just a fake portfolio. All the projects and contact details given
+			   are not real.
+			</p>
+			<p>
+			   © Created for
+			   <a href="https://www.freecodecamp.com/" target="_blank">
+			  	 	freeCodeCamp 
+			   		<i class="fab fa-free-code-camp">
+			   		</i>
+			   </a>
+			</p>
+		</footer>
+	
+</body>
+</html>
