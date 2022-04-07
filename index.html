@@ -6,11 +6,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+
 	<style type="text/css">
 
-		.fa-free-code-camp:before{
-			content: "\f2c5";
-		}
+		
 		
 		
 		#profile-pic
@@ -50,13 +49,6 @@
 			grid-column-gap: 100px;
 		}
 	
-		@media only screen and (max-width: 600px) {
-			body{
-				background-color: lightcyan;	
-			}
-			}
-		
-
 		.btn-show-all{
 			margin-top: 25px;
 			background-color: #003147;
@@ -160,6 +152,10 @@
 			padding-top: 225px;
 		}
 
+		.contact-section-header h2{
+			color: black;
+		}
+
 		p{
 			display: block;
 			font-size: 1.5em;
@@ -213,6 +209,50 @@
 		}
 
 		
+		@media(max-width:700px)
+		{
+
+			ul{
+				float: left;
+			}
+			
+			.btn-show-all{
+				position: relative;
+			}
+
+			.container
+			{
+			
+				grid-template-columns: repeat(1,1fr);
+				justify-content: space-around;
+				z-index: 1000px;
+
+			}
+			
+			#project
+			{
+				overflow: auto;
+				padding-bottom: 50px;
+			}
+
+			.contact-section
+			{
+				overflow-x: auto;
+				margin-bottom: 100px;
+			}
+
+			.contact-section-header{
+			padding-top: -100px;
+		}
+
+
+			.contact-links
+			{
+				display: inline-flex;
+				flex-direction: column;
+			}
+			
+		}
 
 	</style>
 </head>
@@ -251,7 +291,7 @@
 			</h2>
 			<div class="container">
 				<a href="https://codepen.io/yugalbirla/full/VwMRYxo" target="_blank" class="project project-tile">
-			      <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+			      <img class="project-image" src="tribute.jpg" alt="project">
 			      <p class="project-title">
 			        <span class="code">
 				        &lt;
